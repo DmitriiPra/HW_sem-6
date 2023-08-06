@@ -9,3 +9,19 @@
 
 """
 
+
+def arithmetic_progression(a: int, n: int, b: int) -> list:
+    if b <= 0:
+        return ["введено некоректное значение количества элементов прогрессии"]
+
+    return [(a + (i - 1) * n) for i in range(b)]
+
+
+
+
+start_number = int(input("введите число a: "))
+difference = int(input("введите значение разности: "))
+quantity = int(input("введите количество элементов: "))
+
+print(start_number, difference, quantity)
+print(*arithmetic_progression(start_number, difference, quantity))
