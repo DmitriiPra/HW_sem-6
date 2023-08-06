@@ -14,7 +14,7 @@ def arithmetic_progression(a: int, n: int, b: int) -> list:
     if b <= 0:
         return ["введено некоректное значение количества элементов прогрессии"]
 
-    return [(a + (i - 1) * n) for i in range(b)]
+    return [(a + n * i) for i in range(b)]
 
 
 
